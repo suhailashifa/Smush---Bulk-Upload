@@ -1,4 +1,4 @@
-# Smush---Bulk-Upload
+# Smush---Bulk-Upload [Automation]
 
 ---
 
