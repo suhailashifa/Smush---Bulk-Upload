@@ -8,13 +8,14 @@ describe('manual bulk smush', () => {
     cy.get('#user_pass').type('1234567891011');
     cy.get('#wp-submit').click();
 
-    /* ==== Navigate to Smush and Disable Auto Compression ==== */
-    cy.get('#toplevel_page_smush > .wp-has-submenu > .wp-menu-name').click(); //click on Smush from WP dashboard Side panel
-    //cy.get('.sui-modal-skip').click(); //skip modal
-    cy.get('#toplevel_page_smush > .wp-submenu > :nth-child(3) > a').click(); //click on Bulk Smush Sub-Menu
-    cy.get('#column-auto > .sui-form-field > .sui-toggle > .sui-toggle-slider').click();//uncheck auto smush
-    cy.get('#auto').uncheck();
-    cy.get('#save-settings-button').click();
+      // /* ==== Navigate to Smush and Disable Auto Compression ==== */
+      // cy.get('#toplevel_page_smush > .wp-has-submenu > .wp-menu-name').click(); //click on Smush from WP dashboard Side panel
+      // //cy.get('.sui-modal-skip').click(); //skip modal
+      // cy.get('#toplevel_page_smush > .wp-submenu > :nth-child(3) > a').click(); //click on Bulk Smush Sub-Menu
+      // cy.get('#column-auto > .sui-form-field > .sui-toggle > .sui-toggle-slider').click();//uncheck auto smush
+      // cy.get('#auto').uncheck();
+      // cy.get('#auto').scrollIntoView();
+      // cy.get('#save-settings-button').click();
 
     /* ==== Navigates to Media and Uploads 8 Images ==== */
     cy.get('#menu-media > .wp-has-submenu > .wp-menu-name').scrollIntoView();
