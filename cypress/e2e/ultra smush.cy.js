@@ -74,17 +74,16 @@ describe('Ultra Smush', () => {
                     // Step 3: Request and compare the smushed image size
                     cy.request({
                     url: downloadUrl,
-                    encoding: 'binary' // Important for handling image data
+                    encoding: 'binary' 
                     }).then((response) => {
                     const compressedImageSize = response.body.length;
                     
                     // Step 4: Assertion - Compressed image should be smaller
                     expect(compressedImageSize).to.be.lessThan(originalImageSize);
-                    cy.log('Smushed image is smaller in size than original image');
-                    });
-                });
+                    cy.log('Smushed Image is smaller in size than original image');
+              });
             });
+          });
         });
-
   });
 })
