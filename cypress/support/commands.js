@@ -29,7 +29,7 @@ Cypress.Commands.add('uploadMedia', (filePaths) => {
 
 	// Visit the media upload page in the WordPress admin.
 	//cy.visit(utils.getDynURL({ notNetwork: true }) + 'upload.php');
-    cy.visit('https://test2suhailashifa.tempurl.host/wp-admin/upload.php?mode=grid');
+    cy.visit('https://test3suhaila.tempurl.host/wp-admin/upload.php?mode=grid');
 
 	// Switch to list view.
 	cy.get('.view-list').click();
